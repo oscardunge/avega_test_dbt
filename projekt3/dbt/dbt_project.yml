@@ -77,7 +77,7 @@ macro-paths: ["macros"]
 
 seeds:
   my_local_dbt_and_gcp_project:
-    +schema: futurewaterlevel # Ditt BigQuery dataset
+
     +materialized: seed # Viktigt att ha med!
     csv_data_users: # Matchar filnamnet (utan .csv)
       +table_name: users # Tabellnamnet i BigQuery
@@ -85,3 +85,6 @@ seeds:
       +table_name: raw_logs
     csv_data_events:
       +table_name: events
+    csv_data_kommundata_moh:
+      +table_name: kommundata_moh
+    

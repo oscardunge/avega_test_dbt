@@ -4794,3 +4794,557 @@ create schema if not exists `primeval-rune-447712-f5`.`futurewaterlevel_futurewa
 [0m16:26:31.351965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a76bb30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045c8200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a826240>]}
 [0m16:26:31.352187 [debug] [MainThread]: Flushing usage events
 [0m16:26:31.824254 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:39:45.369716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a477a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a90590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a90140>]}
+
+
+============================== 16:39:45.372794 | 34510801-41b0-452d-afe6-aa0621da6e95 ==============================
+[0m16:39:45.372794 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:39:45.373100 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/oscar/git/avega_test_dbt/projekt3/dbt/logs', 'debug': 'False', 'profiles_dir': '/Users/oscar/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt seed --full-refresh', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:39:46.015341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '34510801-41b0-452d-afe6-aa0621da6e95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120c3e1e0>]}
+[0m16:39:46.038889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '34510801-41b0-452d-afe6-aa0621da6e95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120a2ee70>]}
+[0m16:39:46.039183 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m16:39:46.113815 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:39:46.138796 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m16:39:46.139039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '34510801-41b0-452d-afe6-aa0621da6e95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054a9130>]}
+[0m16:39:46.572621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '34510801-41b0-452d-afe6-aa0621da6e95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102c8e9f0>]}
+[0m16:39:46.592427 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/manifest.json
+[0m16:39:46.593863 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/semantic_manifest.json
+[0m16:39:46.604922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '34510801-41b0-452d-afe6-aa0621da6e95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121969550>]}
+[0m16:39:46.605137 [info ] [MainThread]: Found 4 seeds, 489 macros
+[0m16:39:46.605292 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '34510801-41b0-452d-afe6-aa0621da6e95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121939e50>]}
+[0m16:39:46.606095 [info ] [MainThread]: 
+[0m16:39:46.606275 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:39:46.606399 [info ] [MainThread]: 
+[0m16:39:46.606604 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:39:46.608287 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_primeval-rune-447712-f5'
+[0m16:39:46.608472 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:39:46.989584 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_primeval-rune-447712-f5, now list_primeval-rune-447712-f5_futurewaterlevel_futurewaterlevel)
+[0m16:39:46.990196 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:39:47.294894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '34510801-41b0-452d-afe6-aa0621da6e95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1219835f0>]}
+[0m16:39:47.295971 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:39:47.301173 [debug] [Thread-1 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:39:47.301726 [debug] [Thread-2 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh
+[0m16:39:47.302425 [debug] [Thread-3 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:39:47.303525 [debug] [Thread-4 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:39:47.303102 [info ] [Thread-1 (]: 1 of 4 START seed file futurewaterlevel_futurewaterlevel.csv_data_events ....... [RUN]
+[0m16:39:47.304632 [info ] [Thread-2 (]: 2 of 4 START seed file futurewaterlevel_futurewaterlevel.csv_data_kommundata_moh  [RUN]
+[0m16:39:47.305324 [info ] [Thread-3 (]: 3 of 4 START seed file futurewaterlevel_futurewaterlevel.csv_data_raw_logs ..... [RUN]
+[0m16:39:47.305922 [info ] [Thread-4 (]: 4 of 4 START seed file futurewaterlevel_futurewaterlevel.csv_data_users ........ [RUN]
+[0m16:39:47.306503 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_primeval-rune-447712-f5_futurewaterlevel_futurewaterlevel, now seed.my_local_dbt_and_gcp_project.csv_data_events)
+[0m16:39:47.307087 [debug] [Thread-2 (]: Acquiring new bigquery connection 'seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh'
+[0m16:39:47.307591 [debug] [Thread-3 (]: Acquiring new bigquery connection 'seed.my_local_dbt_and_gcp_project.csv_data_raw_logs'
+[0m16:39:47.308092 [debug] [Thread-4 (]: Acquiring new bigquery connection 'seed.my_local_dbt_and_gcp_project.csv_data_users'
+[0m16:39:47.308493 [debug] [Thread-1 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:39:47.308877 [debug] [Thread-2 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh
+[0m16:39:47.309244 [debug] [Thread-3 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:39:47.309593 [debug] [Thread-4 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:39:47.309985 [debug] [Thread-1 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:39:47.310357 [debug] [Thread-2 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh
+[0m16:39:47.310635 [debug] [Thread-3 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:39:47.310891 [debug] [Thread-4 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:39:47.371138 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:39:47.375293 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:39:47.376354 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m16:39:47.441788 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m16:39:47.730422 [debug] [Thread-2 (]: Database Error in seed csv_data_kommundata_moh (csv_data/csv_data_kommundata_moh.csv)
+  Invalid field name "Karlskrona; 15". Fields must contain the allowed characters, and be at most 300 characters long. For allowed characters, please refer to https://cloud.google.com/bigquery/docs/schemas#column_names
+[0m16:39:47.732546 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '34510801-41b0-452d-afe6-aa0621da6e95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1219c6300>]}
+[0m16:39:47.733157 [error] [Thread-2 (]: 2 of 4 ERROR loading seed file futurewaterlevel_futurewaterlevel.csv_data_kommundata_moh  [[31mERROR[0m in 0.42s]
+[0m16:39:47.733731 [debug] [Thread-2 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh
+[0m16:39:47.734300 [debug] [Thread-7 (]: Marking all children of 'seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh' to be skipped because of status 'error'.  Reason: Database Error in seed csv_data_kommundata_moh (csv_data/csv_data_kommundata_moh.csv)
+  Invalid field name "Karlskrona; 15". Fields must contain the allowed characters, and be at most 300 characters long. For allowed characters, please refer to https://cloud.google.com/bigquery/docs/schemas#column_names.
+[0m16:39:47.916792 [debug] [Thread-4 (]: Database Error in seed csv_data_users (csv_data/csv_data_users.csv)
+  Not found: Dataset primeval-rune-447712-f5:futurewaterlevel_futurewaterlevel
+[0m16:39:47.919092 [debug] [Thread-1 (]: Database Error in seed csv_data_events (csv_data/csv_data_events.csv)
+  Not found: Dataset primeval-rune-447712-f5:futurewaterlevel_futurewaterlevel
+[0m16:39:47.919820 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '34510801-41b0-452d-afe6-aa0621da6e95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12539e3c0>]}
+[0m16:39:47.920627 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '34510801-41b0-452d-afe6-aa0621da6e95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1219a0cb0>]}
+[0m16:39:47.921424 [error] [Thread-4 (]: 4 of 4 ERROR loading seed file futurewaterlevel_futurewaterlevel.csv_data_users  [[31mERROR[0m in 0.61s]
+[0m16:39:47.922115 [error] [Thread-1 (]: 1 of 4 ERROR loading seed file futurewaterlevel_futurewaterlevel.csv_data_events  [[31mERROR[0m in 0.61s]
+[0m16:39:47.922775 [debug] [Thread-4 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:39:47.923315 [debug] [Thread-1 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:39:47.923842 [debug] [Thread-7 (]: Marking all children of 'seed.my_local_dbt_and_gcp_project.csv_data_users' to be skipped because of status 'error'.  Reason: Database Error in seed csv_data_users (csv_data/csv_data_users.csv)
+  Not found: Dataset primeval-rune-447712-f5:futurewaterlevel_futurewaterlevel.
+[0m16:39:47.924408 [debug] [Thread-7 (]: Marking all children of 'seed.my_local_dbt_and_gcp_project.csv_data_events' to be skipped because of status 'error'.  Reason: Database Error in seed csv_data_events (csv_data/csv_data_events.csv)
+  Not found: Dataset primeval-rune-447712-f5:futurewaterlevel_futurewaterlevel.
+[0m16:39:51.841642 [debug] [Thread-3 (]: On seed.my_local_dbt_and_gcp_project.csv_data_raw_logs: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "oscar_dunge_gcp", "target_name": "dev", "node_id": "seed.my_local_dbt_and_gcp_project.csv_data_raw_logs"} */
+
+    alter table `primeval-rune-447712-f5`.`futurewaterlevel_futurewaterlevel`.`csv_data_raw_logs` set OPTIONS()
+  
+[0m16:39:52.211747 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=primeval-rune-447712-f5&j=bq:europe-west1:93296955-a912-4bec-a2fa-692a9fa1bff5&page=queryresults
+[0m16:39:52.455699 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.my_local_dbt_and_gcp_project.csv_data_raw_logs"
+[0m16:39:52.476762 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '34510801-41b0-452d-afe6-aa0621da6e95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1218bdee0>]}
+[0m16:39:52.477274 [info ] [Thread-3 (]: 3 of 4 OK loaded seed file futurewaterlevel_futurewaterlevel.csv_data_raw_logs . [[32mCREATE 6[0m in 5.17s]
+[0m16:39:52.477725 [debug] [Thread-3 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:39:52.478698 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:39:52.480146 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:39:52.480379 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_events' was properly closed.
+[0m16:39:52.480564 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh' was properly closed.
+[0m16:39:52.480739 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_raw_logs' was properly closed.
+[0m16:39:52.480907 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_users' was properly closed.
+[0m16:39:52.481127 [info ] [MainThread]: 
+[0m16:39:52.481352 [info ] [MainThread]: Finished running 4 seeds in 0 hours 0 minutes and 5.87 seconds (5.87s).
+[0m16:39:52.482098 [debug] [MainThread]: Command end result
+[0m16:39:52.497995 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/manifest.json
+[0m16:39:52.499442 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/semantic_manifest.json
+[0m16:39:52.503320 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/run_results.json
+[0m16:39:52.503535 [info ] [MainThread]: 
+[0m16:39:52.503764 [info ] [MainThread]: [31mCompleted with 3 errors, 0 partial successes, and 0 warnings:[0m
+[0m16:39:52.503939 [info ] [MainThread]: 
+[0m16:39:52.504151 [error] [MainThread]:   Database Error in seed csv_data_kommundata_moh (csv_data/csv_data_kommundata_moh.csv)
+  Invalid field name "Karlskrona; 15". Fields must contain the allowed characters, and be at most 300 characters long. For allowed characters, please refer to https://cloud.google.com/bigquery/docs/schemas#column_names
+[0m16:39:52.504312 [info ] [MainThread]: 
+[0m16:39:52.504483 [error] [MainThread]:   Database Error in seed csv_data_users (csv_data/csv_data_users.csv)
+  Not found: Dataset primeval-rune-447712-f5:futurewaterlevel_futurewaterlevel
+[0m16:39:52.504620 [info ] [MainThread]: 
+[0m16:39:52.504786 [error] [MainThread]:   Database Error in seed csv_data_events (csv_data/csv_data_events.csv)
+  Not found: Dataset primeval-rune-447712-f5:futurewaterlevel_futurewaterlevel
+[0m16:39:52.504924 [info ] [MainThread]: 
+[0m16:39:52.505079 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=3 SKIP=0 TOTAL=4
+[0m16:39:52.506975 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 7.191715, "process_in_blocks": "0", "process_kernel_time": 0.299855, "process_mem_max_rss": "203456512", "process_out_blocks": "0", "process_user_time": 1.86431}
+[0m16:39:52.507235 [debug] [MainThread]: Command `dbt seed` failed at 16:39:52.507181 after 7.19 seconds
+[0m16:39:52.507447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120e62810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a904d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a90290>]}
+[0m16:39:52.507646 [debug] [MainThread]: Flushing usage events
+[0m16:39:53.053226 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:40:58.637344 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a51340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103851910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a2e630>]}
+
+
+============================== 16:40:58.640275 | 823273cf-97a5-4f8a-a3c0-a84548ab6a7d ==============================
+[0m16:40:58.640275 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:40:58.640572 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/oscar/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/oscar/git/avega_test_dbt/projekt3/dbt/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt seed --full-refresh', 'send_anonymous_usage_stats': 'True'}
+[0m16:40:59.283924 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '823273cf-97a5-4f8a-a3c0-a84548ab6a7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a82b470>]}
+[0m16:40:59.307267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '823273cf-97a5-4f8a-a3c0-a84548ab6a7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a5ee090>]}
+[0m16:40:59.307572 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m16:40:59.382435 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:40:59.425792 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:40:59.425975 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:40:59.435379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '823273cf-97a5-4f8a-a3c0-a84548ab6a7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a9fb8f0>]}
+[0m16:40:59.456674 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/manifest.json
+[0m16:40:59.458157 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/semantic_manifest.json
+[0m16:40:59.469629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '823273cf-97a5-4f8a-a3c0-a84548ab6a7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad2e750>]}
+[0m16:40:59.469846 [info ] [MainThread]: Found 4 seeds, 489 macros
+[0m16:40:59.470004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '823273cf-97a5-4f8a-a3c0-a84548ab6a7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a43fdd0>]}
+[0m16:40:59.470854 [info ] [MainThread]: 
+[0m16:40:59.471014 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:40:59.471130 [info ] [MainThread]: 
+[0m16:40:59.471340 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:40:59.473038 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_primeval-rune-447712-f5'
+[0m16:40:59.473222 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:40:59.794839 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_primeval-rune-447712-f5, now list_primeval-rune-447712-f5_futurewaterlevel_futurewaterlevel)
+[0m16:40:59.796774 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:41:00.094145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '823273cf-97a5-4f8a-a3c0-a84548ab6a7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a247f80>]}
+[0m16:41:00.095112 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:41:00.100015 [debug] [Thread-1 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:41:00.100649 [debug] [Thread-2 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh
+[0m16:41:00.101101 [debug] [Thread-3 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:41:00.102217 [debug] [Thread-4 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:41:00.101823 [info ] [Thread-1 (]: 1 of 4 START seed file futurewaterlevel_futurewaterlevel.csv_data_events ....... [RUN]
+[0m16:41:00.102833 [info ] [Thread-2 (]: 2 of 4 START seed file futurewaterlevel_futurewaterlevel.csv_data_kommundata_moh  [RUN]
+[0m16:41:00.103408 [info ] [Thread-3 (]: 3 of 4 START seed file futurewaterlevel_futurewaterlevel.csv_data_raw_logs ..... [RUN]
+[0m16:41:00.103941 [info ] [Thread-4 (]: 4 of 4 START seed file futurewaterlevel_futurewaterlevel.csv_data_users ........ [RUN]
+[0m16:41:00.104527 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_primeval-rune-447712-f5_futurewaterlevel_futurewaterlevel, now seed.my_local_dbt_and_gcp_project.csv_data_events)
+[0m16:41:00.105143 [debug] [Thread-2 (]: Acquiring new bigquery connection 'seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh'
+[0m16:41:00.105564 [debug] [Thread-3 (]: Acquiring new bigquery connection 'seed.my_local_dbt_and_gcp_project.csv_data_raw_logs'
+[0m16:41:00.105946 [debug] [Thread-4 (]: Acquiring new bigquery connection 'seed.my_local_dbt_and_gcp_project.csv_data_users'
+[0m16:41:00.106266 [debug] [Thread-1 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:41:00.106535 [debug] [Thread-2 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh
+[0m16:41:00.106760 [debug] [Thread-3 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:41:00.106982 [debug] [Thread-4 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:41:00.107228 [debug] [Thread-1 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:41:00.107456 [debug] [Thread-2 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh
+[0m16:41:00.107720 [debug] [Thread-3 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:41:00.108066 [debug] [Thread-4 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:41:00.178238 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:41:00.179018 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:41:00.179573 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m16:41:00.182596 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m16:41:00.575237 [debug] [Thread-2 (]: Database Error in seed csv_data_kommundata_moh (csv_data/csv_data_kommundata_moh.csv)
+  Not found: Dataset primeval-rune-447712-f5:futurewaterlevel_futurewaterlevel
+[0m16:41:00.577262 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '823273cf-97a5-4f8a-a3c0-a84548ab6a7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae0fec0>]}
+[0m16:41:00.577853 [error] [Thread-2 (]: 2 of 4 ERROR loading seed file futurewaterlevel_futurewaterlevel.csv_data_kommundata_moh  [[31mERROR[0m in 0.47s]
+[0m16:41:00.578431 [debug] [Thread-2 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh
+[0m16:41:00.578988 [debug] [Thread-7 (]: Marking all children of 'seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh' to be skipped because of status 'error'.  Reason: Database Error in seed csv_data_kommundata_moh (csv_data/csv_data_kommundata_moh.csv)
+  Not found: Dataset primeval-rune-447712-f5:futurewaterlevel_futurewaterlevel.
+[0m16:41:03.300854 [debug] [Thread-1 (]: On seed.my_local_dbt_and_gcp_project.csv_data_events: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "oscar_dunge_gcp", "target_name": "dev", "node_id": "seed.my_local_dbt_and_gcp_project.csv_data_events"} */
+
+    alter table `primeval-rune-447712-f5`.`futurewaterlevel_futurewaterlevel`.`csv_data_events` set OPTIONS()
+  
+[0m16:41:03.495327 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=primeval-rune-447712-f5&j=bq:europe-west1:1dc77705-4e3b-4a71-9525-c673084e4530&page=queryresults
+[0m16:41:03.539786 [debug] [Thread-3 (]: On seed.my_local_dbt_and_gcp_project.csv_data_raw_logs: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "oscar_dunge_gcp", "target_name": "dev", "node_id": "seed.my_local_dbt_and_gcp_project.csv_data_raw_logs"} */
+
+    alter table `primeval-rune-447712-f5`.`futurewaterlevel_futurewaterlevel`.`csv_data_raw_logs` set OPTIONS()
+  
+[0m16:41:03.757994 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=primeval-rune-447712-f5&j=bq:europe-west1:bb1bd452-b156-427b-8bd8-697076e72d74&page=queryresults
+[0m16:41:03.819037 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.my_local_dbt_and_gcp_project.csv_data_events"
+[0m16:41:03.839761 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '823273cf-97a5-4f8a-a3c0-a84548ab6a7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1c5760>]}
+[0m16:41:03.840305 [info ] [Thread-1 (]: 1 of 4 OK loaded seed file futurewaterlevel_futurewaterlevel.csv_data_events ... [[32mCREATE 5[0m in 3.74s]
+[0m16:41:03.840805 [debug] [Thread-1 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:41:04.075998 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.my_local_dbt_and_gcp_project.csv_data_raw_logs"
+[0m16:41:04.085711 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '823273cf-97a5-4f8a-a3c0-a84548ab6a7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1c7cb0>]}
+[0m16:41:04.086505 [info ] [Thread-3 (]: 3 of 4 OK loaded seed file futurewaterlevel_futurewaterlevel.csv_data_raw_logs . [[32mCREATE 6[0m in 3.98s]
+[0m16:41:04.087111 [debug] [Thread-3 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:41:04.279001 [debug] [Thread-4 (]: On seed.my_local_dbt_and_gcp_project.csv_data_users: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "oscar_dunge_gcp", "target_name": "dev", "node_id": "seed.my_local_dbt_and_gcp_project.csv_data_users"} */
+
+    alter table `primeval-rune-447712-f5`.`futurewaterlevel_futurewaterlevel`.`csv_data_users` set OPTIONS()
+  
+[0m16:41:05.122472 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=primeval-rune-447712-f5&j=bq:europe-west1:18eac45f-d57f-4b4e-a11e-8f3006ec659b&page=queryresults
+[0m16:41:05.340496 [debug] [Thread-4 (]: Writing runtime SQL for node "seed.my_local_dbt_and_gcp_project.csv_data_users"
+[0m16:41:05.345738 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '823273cf-97a5-4f8a-a3c0-a84548ab6a7d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b0ce090>]}
+[0m16:41:05.346643 [info ] [Thread-4 (]: 4 of 4 OK loaded seed file futurewaterlevel_futurewaterlevel.csv_data_users .... [[32mCREATE 5[0m in 5.24s]
+[0m16:41:05.347470 [debug] [Thread-4 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:41:05.349292 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:41:05.352013 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:41:05.352524 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_events' was properly closed.
+[0m16:41:05.352890 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh' was properly closed.
+[0m16:41:05.353520 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_raw_logs' was properly closed.
+[0m16:41:05.353891 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_users' was properly closed.
+[0m16:41:05.354280 [info ] [MainThread]: 
+[0m16:41:05.354884 [info ] [MainThread]: Finished running 4 seeds in 0 hours 0 minutes and 5.88 seconds (5.88s).
+[0m16:41:05.356022 [debug] [MainThread]: Command end result
+[0m16:41:05.375897 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/manifest.json
+[0m16:41:05.377336 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/semantic_manifest.json
+[0m16:41:05.382215 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/run_results.json
+[0m16:41:05.382469 [info ] [MainThread]: 
+[0m16:41:05.382730 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m16:41:05.382922 [info ] [MainThread]: 
+[0m16:41:05.383157 [error] [MainThread]:   Database Error in seed csv_data_kommundata_moh (csv_data/csv_data_kommundata_moh.csv)
+  Not found: Dataset primeval-rune-447712-f5:futurewaterlevel_futurewaterlevel
+[0m16:41:05.383339 [info ] [MainThread]: 
+[0m16:41:05.383757 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=0 TOTAL=4
+[0m16:41:05.386255 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 6.8004375, "process_in_blocks": "0", "process_kernel_time": 0.303818, "process_mem_max_rss": "201179136", "process_out_blocks": "0", "process_user_time": 1.551465}
+[0m16:41:05.386571 [debug] [MainThread]: Command `dbt seed` failed at 16:41:05.386503 after 6.80 seconds
+[0m16:41:05.386835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a2e240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a7be00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f1c230>]}
+[0m16:41:05.387074 [debug] [MainThread]: Flushing usage events
+[0m16:41:05.796991 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:49:57.435519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10673ecc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106788470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067880b0>]}
+
+
+============================== 16:49:57.438496 | 21ff8fb6-9a80-46b6-8fd3-ca4d424fce8b ==============================
+[0m16:49:57.438496 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:49:57.438807 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/oscar/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/Users/oscar/git/avega_test_dbt/projekt3/dbt/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt seed --full-refresh', 'send_anonymous_usage_stats': 'True'}
+[0m16:49:58.064671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '21ff8fb6-9a80-46b6-8fd3-ca4d424fce8b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049e5e50>]}
+[0m16:49:58.087632 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '21ff8fb6-9a80-46b6-8fd3-ca4d424fce8b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c269220>]}
+[0m16:49:58.087913 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m16:49:58.159927 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:49:58.203852 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:49:58.204031 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:49:58.213263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '21ff8fb6-9a80-46b6-8fd3-ca4d424fce8b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10673f8f0>]}
+[0m16:49:58.234423 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/manifest.json
+[0m16:49:58.235871 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/semantic_manifest.json
+[0m16:49:58.246490 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '21ff8fb6-9a80-46b6-8fd3-ca4d424fce8b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca19b80>]}
+[0m16:49:58.246700 [info ] [MainThread]: Found 4 seeds, 489 macros
+[0m16:49:58.246860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '21ff8fb6-9a80-46b6-8fd3-ca4d424fce8b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c8615b0>]}
+[0m16:49:58.247711 [info ] [MainThread]: 
+[0m16:49:58.247883 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:49:58.248004 [info ] [MainThread]: 
+[0m16:49:58.248217 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:49:58.249863 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_primeval-rune-447712-f5'
+[0m16:49:58.250049 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:49:58.644200 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_primeval-rune-447712-f5, now list_primeval-rune-447712-f5_futurewaterlevel_futurewaterlevel)
+[0m16:49:58.644887 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:49:58.964026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '21ff8fb6-9a80-46b6-8fd3-ca4d424fce8b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a7ae70>]}
+[0m16:49:58.965032 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:49:58.969344 [debug] [Thread-1 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:49:58.969937 [debug] [Thread-2 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh
+[0m16:49:58.970395 [debug] [Thread-3 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:49:58.971395 [debug] [Thread-4 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:49:58.971018 [info ] [Thread-1 (]: 1 of 4 START seed file futurewaterlevel_futurewaterlevel.csv_data_events ....... [RUN]
+[0m16:49:58.972090 [info ] [Thread-2 (]: 2 of 4 START seed file futurewaterlevel_futurewaterlevel.csv_data_kommundata_moh  [RUN]
+[0m16:49:58.972842 [info ] [Thread-3 (]: 3 of 4 START seed file futurewaterlevel_futurewaterlevel.csv_data_raw_logs ..... [RUN]
+[0m16:49:58.973507 [info ] [Thread-4 (]: 4 of 4 START seed file futurewaterlevel_futurewaterlevel.csv_data_users ........ [RUN]
+[0m16:49:58.974100 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_primeval-rune-447712-f5_futurewaterlevel_futurewaterlevel, now seed.my_local_dbt_and_gcp_project.csv_data_events)
+[0m16:49:58.974672 [debug] [Thread-2 (]: Acquiring new bigquery connection 'seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh'
+[0m16:49:58.975152 [debug] [Thread-3 (]: Acquiring new bigquery connection 'seed.my_local_dbt_and_gcp_project.csv_data_raw_logs'
+[0m16:49:58.975560 [debug] [Thread-4 (]: Acquiring new bigquery connection 'seed.my_local_dbt_and_gcp_project.csv_data_users'
+[0m16:49:58.975884 [debug] [Thread-1 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:49:58.976199 [debug] [Thread-2 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh
+[0m16:49:58.976494 [debug] [Thread-3 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:49:58.976787 [debug] [Thread-4 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:49:58.977125 [debug] [Thread-1 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:49:58.977639 [debug] [Thread-2 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh
+[0m16:49:58.978043 [debug] [Thread-3 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:49:58.978383 [debug] [Thread-4 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:49:59.040042 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:49:59.042008 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m16:49:59.042626 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m16:49:59.043203 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:49:59.419612 [debug] [Thread-2 (]: Database Error in seed csv_data_kommundata_moh (csv_data/csv_data_kommundata_moh.csv)
+  Not found: Dataset primeval-rune-447712-f5:futurewaterlevel_futurewaterlevel
+[0m16:49:59.422253 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '21ff8fb6-9a80-46b6-8fd3-ca4d424fce8b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a9de50>]}
+[0m16:49:59.422976 [error] [Thread-2 (]: 2 of 4 ERROR loading seed file futurewaterlevel_futurewaterlevel.csv_data_kommundata_moh  [[31mERROR[0m in 0.45s]
+[0m16:49:59.423568 [debug] [Thread-2 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh
+[0m16:49:59.424139 [debug] [Thread-7 (]: Marking all children of 'seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh' to be skipped because of status 'error'.  Reason: Database Error in seed csv_data_kommundata_moh (csv_data/csv_data_kommundata_moh.csv)
+  Not found: Dataset primeval-rune-447712-f5:futurewaterlevel_futurewaterlevel.
+[0m16:49:59.543836 [debug] [Thread-4 (]: Database Error in seed csv_data_users (csv_data/csv_data_users.csv)
+  Not found: Dataset primeval-rune-447712-f5:futurewaterlevel_futurewaterlevel
+[0m16:49:59.545837 [debug] [Thread-3 (]: Database Error in seed csv_data_raw_logs (csv_data/csv_data_raw_logs.csv)
+  Not found: Dataset primeval-rune-447712-f5:futurewaterlevel_futurewaterlevel
+[0m16:49:59.546371 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '21ff8fb6-9a80-46b6-8fd3-ca4d424fce8b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10caa8da0>]}
+[0m16:49:59.546784 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '21ff8fb6-9a80-46b6-8fd3-ca4d424fce8b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cfb05c0>]}
+[0m16:49:59.547363 [error] [Thread-4 (]: 4 of 4 ERROR loading seed file futurewaterlevel_futurewaterlevel.csv_data_users  [[31mERROR[0m in 0.57s]
+[0m16:49:59.548378 [debug] [Thread-4 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:49:59.547819 [error] [Thread-3 (]: 3 of 4 ERROR loading seed file futurewaterlevel_futurewaterlevel.csv_data_raw_logs  [[31mERROR[0m in 0.57s]
+[0m16:49:59.548946 [debug] [Thread-7 (]: Marking all children of 'seed.my_local_dbt_and_gcp_project.csv_data_users' to be skipped because of status 'error'.  Reason: Database Error in seed csv_data_users (csv_data/csv_data_users.csv)
+  Not found: Dataset primeval-rune-447712-f5:futurewaterlevel_futurewaterlevel.
+[0m16:49:59.549392 [debug] [Thread-3 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:49:59.549905 [debug] [Thread-7 (]: Marking all children of 'seed.my_local_dbt_and_gcp_project.csv_data_raw_logs' to be skipped because of status 'error'.  Reason: Database Error in seed csv_data_raw_logs (csv_data/csv_data_raw_logs.csv)
+  Not found: Dataset primeval-rune-447712-f5:futurewaterlevel_futurewaterlevel.
+[0m16:49:59.563062 [debug] [Thread-1 (]: Database Error in seed csv_data_events (csv_data/csv_data_events.csv)
+  Not found: Dataset primeval-rune-447712-f5:futurewaterlevel_futurewaterlevel
+[0m16:49:59.563484 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '21ff8fb6-9a80-46b6-8fd3-ca4d424fce8b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cfb0d40>]}
+[0m16:49:59.563912 [error] [Thread-1 (]: 1 of 4 ERROR loading seed file futurewaterlevel_futurewaterlevel.csv_data_events  [[31mERROR[0m in 0.59s]
+[0m16:49:59.564349 [debug] [Thread-1 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:49:59.564675 [debug] [Thread-7 (]: Marking all children of 'seed.my_local_dbt_and_gcp_project.csv_data_events' to be skipped because of status 'error'.  Reason: Database Error in seed csv_data_events (csv_data/csv_data_events.csv)
+  Not found: Dataset primeval-rune-447712-f5:futurewaterlevel_futurewaterlevel.
+[0m16:49:59.565516 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:49:59.567122 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:49:59.567401 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_events' was properly closed.
+[0m16:49:59.567611 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh' was properly closed.
+[0m16:49:59.567798 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_raw_logs' was properly closed.
+[0m16:49:59.567977 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_users' was properly closed.
+[0m16:49:59.568190 [info ] [MainThread]: 
+[0m16:49:59.568413 [info ] [MainThread]: Finished running 4 seeds in 0 hours 0 minutes and 1.32 seconds (1.32s).
+[0m16:49:59.569128 [debug] [MainThread]: Command end result
+[0m16:49:59.585099 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/manifest.json
+[0m16:49:59.586173 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/semantic_manifest.json
+[0m16:49:59.590385 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/run_results.json
+[0m16:49:59.590583 [info ] [MainThread]: 
+[0m16:49:59.590800 [info ] [MainThread]: [31mCompleted with 4 errors, 0 partial successes, and 0 warnings:[0m
+[0m16:49:59.590965 [info ] [MainThread]: 
+[0m16:49:59.591165 [error] [MainThread]:   Database Error in seed csv_data_kommundata_moh (csv_data/csv_data_kommundata_moh.csv)
+  Not found: Dataset primeval-rune-447712-f5:futurewaterlevel_futurewaterlevel
+[0m16:49:59.591313 [info ] [MainThread]: 
+[0m16:49:59.591483 [error] [MainThread]:   Database Error in seed csv_data_users (csv_data/csv_data_users.csv)
+  Not found: Dataset primeval-rune-447712-f5:futurewaterlevel_futurewaterlevel
+[0m16:49:59.591644 [info ] [MainThread]: 
+[0m16:49:59.591910 [error] [MainThread]:   Database Error in seed csv_data_raw_logs (csv_data/csv_data_raw_logs.csv)
+  Not found: Dataset primeval-rune-447712-f5:futurewaterlevel_futurewaterlevel
+[0m16:49:59.592080 [info ] [MainThread]: 
+[0m16:49:59.592261 [error] [MainThread]:   Database Error in seed csv_data_events (csv_data/csv_data_events.csv)
+  Not found: Dataset primeval-rune-447712-f5:futurewaterlevel_futurewaterlevel
+[0m16:49:59.592397 [info ] [MainThread]: 
+[0m16:49:59.592556 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=4 SKIP=0 TOTAL=4
+[0m16:49:59.594501 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 2.2101865, "process_in_blocks": "0", "process_kernel_time": 0.284004, "process_mem_max_rss": "199737344", "process_out_blocks": "0", "process_user_time": 1.373088}
+[0m16:49:59.594720 [debug] [MainThread]: Command `dbt seed` failed at 16:49:59.594675 after 2.21 seconds
+[0m16:49:59.594939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057b82c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10673ecc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cf47b60>]}
+[0m16:49:59.595117 [debug] [MainThread]: Flushing usage events
+[0m16:50:00.102421 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:50:44.465479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b0b920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b5c6b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b5c320>]}
+
+
+============================== 16:50:44.468447 | cf2fddb9-24c2-4612-be08-70e10c837d7e ==============================
+[0m16:50:44.468447 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:50:44.468737 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/oscar/git/avega_test_dbt/projekt3/dbt/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/oscar/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt seed --full-refresh', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:50:45.076120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cf2fddb9-24c2-4612-be08-70e10c837d7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106dbdd60>]}
+[0m16:50:45.099324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cf2fddb9-24c2-4612-be08-70e10c837d7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e66f020>]}
+[0m16:50:45.099585 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m16:50:45.170748 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:50:45.195063 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m16:50:45.195316 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'cf2fddb9-24c2-4612-be08-70e10c837d7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108674d10>]}
+[0m16:50:45.616391 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cf2fddb9-24c2-4612-be08-70e10c837d7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ee24f80>]}
+[0m16:50:45.635991 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/manifest.json
+[0m16:50:45.637539 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/semantic_manifest.json
+[0m16:50:45.647782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cf2fddb9-24c2-4612-be08-70e10c837d7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ee4b380>]}
+[0m16:50:45.648005 [info ] [MainThread]: Found 4 seeds, 489 macros
+[0m16:50:45.648169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cf2fddb9-24c2-4612-be08-70e10c837d7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eca2ea0>]}
+[0m16:50:45.648951 [info ] [MainThread]: 
+[0m16:50:45.649113 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:50:45.649236 [info ] [MainThread]: 
+[0m16:50:45.649434 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:50:45.651076 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_primeval-rune-447712-f5'
+[0m16:50:45.651255 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:50:46.057583 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_primeval-rune-447712-f5, now list_primeval-rune-447712-f5_futurewaterlevel)
+[0m16:50:46.058598 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:50:46.373586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cf2fddb9-24c2-4612-be08-70e10c837d7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ece8170>]}
+[0m16:50:46.374570 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:50:46.379287 [debug] [Thread-1 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:50:46.380062 [debug] [Thread-2 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh
+[0m16:50:46.380585 [debug] [Thread-3 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:50:46.381189 [info ] [Thread-1 (]: 1 of 4 START seed file futurewaterlevel.csv_data_events ........................ [RUN]
+[0m16:50:46.381703 [debug] [Thread-4 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:50:46.382254 [info ] [Thread-2 (]: 2 of 4 START seed file futurewaterlevel.csv_data_kommundata_moh ................ [RUN]
+[0m16:50:46.382843 [info ] [Thread-3 (]: 3 of 4 START seed file futurewaterlevel.csv_data_raw_logs ...................... [RUN]
+[0m16:50:46.383392 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_primeval-rune-447712-f5_futurewaterlevel, now seed.my_local_dbt_and_gcp_project.csv_data_events)
+[0m16:50:46.383900 [info ] [Thread-4 (]: 4 of 4 START seed file futurewaterlevel.csv_data_users ......................... [RUN]
+[0m16:50:46.384462 [debug] [Thread-2 (]: Acquiring new bigquery connection 'seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh'
+[0m16:50:46.384949 [debug] [Thread-3 (]: Acquiring new bigquery connection 'seed.my_local_dbt_and_gcp_project.csv_data_raw_logs'
+[0m16:50:46.385341 [debug] [Thread-1 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:50:46.385807 [debug] [Thread-4 (]: Acquiring new bigquery connection 'seed.my_local_dbt_and_gcp_project.csv_data_users'
+[0m16:50:46.386168 [debug] [Thread-2 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh
+[0m16:50:46.386456 [debug] [Thread-3 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:50:46.386774 [debug] [Thread-1 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:50:46.387216 [debug] [Thread-4 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:50:46.387616 [debug] [Thread-2 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh
+[0m16:50:46.387956 [debug] [Thread-3 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:50:46.403595 [debug] [Thread-4 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:50:46.445053 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:50:46.449648 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:50:46.450361 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m16:50:46.451017 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m16:50:46.810024 [debug] [Thread-2 (]: Database Error in seed csv_data_kommundata_moh (csv_data/csv_data_kommundata_moh.csv)
+  Invalid field name "Karlskrona; 15". Fields must contain the allowed characters, and be at most 300 characters long. For allowed characters, please refer to https://cloud.google.com/bigquery/docs/schemas#column_names
+[0m16:50:46.812583 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cf2fddb9-24c2-4612-be08-70e10c837d7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ece5ee0>]}
+[0m16:50:46.813188 [error] [Thread-2 (]: 2 of 4 ERROR loading seed file futurewaterlevel.csv_data_kommundata_moh ........ [[31mERROR[0m in 0.43s]
+[0m16:50:46.813776 [debug] [Thread-2 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh
+[0m16:50:46.814256 [debug] [Thread-7 (]: Marking all children of 'seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh' to be skipped because of status 'error'.  Reason: Database Error in seed csv_data_kommundata_moh (csv_data/csv_data_kommundata_moh.csv)
+  Invalid field name "Karlskrona; 15". Fields must contain the allowed characters, and be at most 300 characters long. For allowed characters, please refer to https://cloud.google.com/bigquery/docs/schemas#column_names.
+[0m16:50:49.930400 [debug] [Thread-4 (]: On seed.my_local_dbt_and_gcp_project.csv_data_users: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "oscar_dunge_gcp", "target_name": "dev", "node_id": "seed.my_local_dbt_and_gcp_project.csv_data_users"} */
+
+    alter table `primeval-rune-447712-f5`.`futurewaterlevel`.`csv_data_users` set OPTIONS()
+  
+[0m16:50:50.253082 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=primeval-rune-447712-f5&j=bq:europe-west1:7a02e744-3bc5-42d6-8f46-e7d5a45bb140&page=queryresults
+[0m16:50:50.540570 [debug] [Thread-4 (]: Writing runtime SQL for node "seed.my_local_dbt_and_gcp_project.csv_data_users"
+[0m16:50:50.561487 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cf2fddb9-24c2-4612-be08-70e10c837d7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106dbcd40>]}
+[0m16:50:50.561975 [info ] [Thread-4 (]: 4 of 4 OK loaded seed file futurewaterlevel.csv_data_users ..................... [[32mCREATE 5[0m in 4.18s]
+[0m16:50:50.562402 [debug] [Thread-4 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:50:52.426841 [debug] [Thread-1 (]: On seed.my_local_dbt_and_gcp_project.csv_data_events: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "oscar_dunge_gcp", "target_name": "dev", "node_id": "seed.my_local_dbt_and_gcp_project.csv_data_events"} */
+
+    alter table `primeval-rune-447712-f5`.`futurewaterlevel`.`csv_data_events` set OPTIONS()
+  
+[0m16:50:52.814316 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=primeval-rune-447712-f5&j=bq:europe-west1:4f3831fd-abc2-4f79-8ddd-fc35fce6ecec&page=queryresults
+[0m16:50:53.097083 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.my_local_dbt_and_gcp_project.csv_data_events"
+[0m16:50:53.103230 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cf2fddb9-24c2-4612-be08-70e10c837d7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1128d2a20>]}
+[0m16:50:53.103978 [info ] [Thread-1 (]: 1 of 4 OK loaded seed file futurewaterlevel.csv_data_events .................... [[32mCREATE 5[0m in 6.72s]
+[0m16:50:53.104663 [debug] [Thread-1 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:50:53.119958 [debug] [Thread-3 (]: On seed.my_local_dbt_and_gcp_project.csv_data_raw_logs: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "oscar_dunge_gcp", "target_name": "dev", "node_id": "seed.my_local_dbt_and_gcp_project.csv_data_raw_logs"} */
+
+    alter table `primeval-rune-447712-f5`.`futurewaterlevel`.`csv_data_raw_logs` set OPTIONS()
+  
+[0m16:50:53.430310 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=primeval-rune-447712-f5&j=bq:europe-west1:f4608b2a-c537-40f2-96d1-4bda9344399c&page=queryresults
+[0m16:50:53.657402 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.my_local_dbt_and_gcp_project.csv_data_raw_logs"
+[0m16:50:53.663104 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cf2fddb9-24c2-4612-be08-70e10c837d7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f381ca0>]}
+[0m16:50:53.664036 [info ] [Thread-3 (]: 3 of 4 OK loaded seed file futurewaterlevel.csv_data_raw_logs .................. [[32mCREATE 6[0m in 7.28s]
+[0m16:50:53.664847 [debug] [Thread-3 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:50:53.666713 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:50:53.669483 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:50:53.669972 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_events' was properly closed.
+[0m16:50:53.670312 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh' was properly closed.
+[0m16:50:53.670609 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_raw_logs' was properly closed.
+[0m16:50:53.670897 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_users' was properly closed.
+[0m16:50:53.671461 [info ] [MainThread]: 
+[0m16:50:53.671999 [info ] [MainThread]: Finished running 4 seeds in 0 hours 0 minutes and 8.02 seconds (8.02s).
+[0m16:50:53.673299 [debug] [MainThread]: Command end result
+[0m16:50:53.695170 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/manifest.json
+[0m16:50:53.696507 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/semantic_manifest.json
+[0m16:50:53.700907 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/run_results.json
+[0m16:50:53.701152 [info ] [MainThread]: 
+[0m16:50:53.701405 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m16:50:53.701599 [info ] [MainThread]: 
+[0m16:50:53.701837 [error] [MainThread]:   Database Error in seed csv_data_kommundata_moh (csv_data/csv_data_kommundata_moh.csv)
+  Invalid field name "Karlskrona; 15". Fields must contain the allowed characters, and be at most 300 characters long. For allowed characters, please refer to https://cloud.google.com/bigquery/docs/schemas#column_names
+[0m16:50:53.702020 [info ] [MainThread]: 
+[0m16:50:53.702208 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=0 TOTAL=4
+[0m16:50:53.704350 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 9.287362, "process_in_blocks": "0", "process_kernel_time": 0.296657, "process_mem_max_rss": "202817536", "process_out_blocks": "0", "process_user_time": 1.900668}
+[0m16:50:53.704607 [debug] [MainThread]: Command `dbt seed` failed at 16:50:53.704554 after 9.29 seconds
+[0m16:50:53.704830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f0b3e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b5c110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b5c320>]}
+[0m16:50:53.705044 [debug] [MainThread]: Flushing usage events
+[0m16:50:54.194487 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:52:21.257613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e46660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e90470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e90080>]}
+
+
+============================== 16:52:21.260732 | acbaa658-fe83-40ca-b5ac-4f7f571faccc ==============================
+[0m16:52:21.260732 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:52:21.261052 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/oscar/git/avega_test_dbt/projekt3/dbt/logs', 'profiles_dir': '/Users/oscar/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt seed --full-refresh', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:52:21.901549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'acbaa658-fe83-40ca-b5ac-4f7f571faccc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1030f1ca0>]}
+[0m16:52:21.924493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'acbaa658-fe83-40ca-b5ac-4f7f571faccc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049aa5a0>]}
+[0m16:52:21.924764 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m16:52:21.997492 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:52:22.040466 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:52:22.040724 [debug] [MainThread]: Partial parsing: updated file: my_local_dbt_and_gcp_project://csv_data/csv_data_kommundata_moh.csv
+[0m16:52:22.120653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'acbaa658-fe83-40ca-b5ac-4f7f571faccc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b17a900>]}
+[0m16:52:22.139988 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/manifest.json
+[0m16:52:22.141738 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/semantic_manifest.json
+[0m16:52:22.152794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'acbaa658-fe83-40ca-b5ac-4f7f571faccc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1e8350>]}
+[0m16:52:22.153016 [info ] [MainThread]: Found 4 seeds, 489 macros
+[0m16:52:22.153181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'acbaa658-fe83-40ca-b5ac-4f7f571faccc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae1a180>]}
+[0m16:52:22.154036 [info ] [MainThread]: 
+[0m16:52:22.154195 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:52:22.154310 [info ] [MainThread]: 
+[0m16:52:22.154511 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:52:22.156158 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_primeval-rune-447712-f5'
+[0m16:52:22.156328 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:52:22.625770 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_primeval-rune-447712-f5, now list_primeval-rune-447712-f5_futurewaterlevel)
+[0m16:52:22.626735 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:52:22.937329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'acbaa658-fe83-40ca-b5ac-4f7f571faccc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b26b3e0>]}
+[0m16:52:22.939418 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:52:22.943586 [debug] [Thread-1 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:52:22.944145 [debug] [Thread-2 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh
+[0m16:52:22.944792 [debug] [Thread-3 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:52:22.945814 [debug] [Thread-4 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:52:22.945428 [info ] [Thread-1 (]: 1 of 4 START seed file futurewaterlevel.csv_data_events ........................ [RUN]
+[0m16:52:22.946460 [info ] [Thread-2 (]: 2 of 4 START seed file futurewaterlevel.csv_data_kommundata_moh ................ [RUN]
+[0m16:52:22.946972 [info ] [Thread-3 (]: 3 of 4 START seed file futurewaterlevel.csv_data_raw_logs ...................... [RUN]
+[0m16:52:22.947506 [info ] [Thread-4 (]: 4 of 4 START seed file futurewaterlevel.csv_data_users ......................... [RUN]
+[0m16:52:22.948036 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_primeval-rune-447712-f5_futurewaterlevel, now seed.my_local_dbt_and_gcp_project.csv_data_events)
+[0m16:52:22.948536 [debug] [Thread-2 (]: Acquiring new bigquery connection 'seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh'
+[0m16:52:22.948977 [debug] [Thread-3 (]: Acquiring new bigquery connection 'seed.my_local_dbt_and_gcp_project.csv_data_raw_logs'
+[0m16:52:22.949361 [debug] [Thread-4 (]: Acquiring new bigquery connection 'seed.my_local_dbt_and_gcp_project.csv_data_users'
+[0m16:52:22.949688 [debug] [Thread-1 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:52:22.949999 [debug] [Thread-2 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh
+[0m16:52:22.950288 [debug] [Thread-3 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:52:22.950577 [debug] [Thread-4 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:52:22.950895 [debug] [Thread-1 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:52:22.951201 [debug] [Thread-2 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh
+[0m16:52:22.951488 [debug] [Thread-3 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:52:22.951772 [debug] [Thread-4 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:52:23.044236 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:52:23.044878 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m16:52:23.048513 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:52:23.049185 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m16:52:25.821835 [debug] [Thread-2 (]: On seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "oscar_dunge_gcp", "target_name": "dev", "node_id": "seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh"} */
+
+    alter table `primeval-rune-447712-f5`.`futurewaterlevel`.`csv_data_kommundata_moh` set OPTIONS()
+  
+[0m16:52:26.526958 [debug] [Thread-4 (]: On seed.my_local_dbt_and_gcp_project.csv_data_users: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "oscar_dunge_gcp", "target_name": "dev", "node_id": "seed.my_local_dbt_and_gcp_project.csv_data_users"} */
+
+    alter table `primeval-rune-447712-f5`.`futurewaterlevel`.`csv_data_users` set OPTIONS()
+  
+[0m16:52:26.621830 [debug] [Thread-3 (]: On seed.my_local_dbt_and_gcp_project.csv_data_raw_logs: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "oscar_dunge_gcp", "target_name": "dev", "node_id": "seed.my_local_dbt_and_gcp_project.csv_data_raw_logs"} */
+
+    alter table `primeval-rune-447712-f5`.`futurewaterlevel`.`csv_data_raw_logs` set OPTIONS()
+  
+[0m16:52:26.782341 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=primeval-rune-447712-f5&j=bq:europe-west1:ff912346-26f0-4886-91a7-8c0c98fe49b8&page=queryresults
+[0m16:52:26.799303 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=primeval-rune-447712-f5&j=bq:europe-west1:8b86cf8e-e0aa-4a3b-a63a-223f24921f61&page=queryresults
+[0m16:52:26.829737 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=primeval-rune-447712-f5&j=bq:europe-west1:216a6d43-38c7-45a5-a76a-03a43eeaae12&page=queryresults
+[0m16:52:27.082559 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.my_local_dbt_and_gcp_project.csv_data_raw_logs"
+[0m16:52:27.103294 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh"
+[0m16:52:27.104808 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'acbaa658-fe83-40ca-b5ac-4f7f571faccc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1041a5f40>]}
+[0m16:52:27.105193 [info ] [Thread-3 (]: 3 of 4 OK loaded seed file futurewaterlevel.csv_data_raw_logs .................. [[32mCREATE 6[0m in 4.15s]
+[0m16:52:27.106694 [debug] [Thread-3 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:52:27.107116 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'acbaa658-fe83-40ca-b5ac-4f7f571faccc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b3260c0>]}
+[0m16:52:27.107482 [info ] [Thread-2 (]: 2 of 4 OK loaded seed file futurewaterlevel.csv_data_kommundata_moh ............ [[32mCREATE 199[0m in 4.16s]
+[0m16:52:27.107820 [debug] [Thread-2 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh
+[0m16:52:27.144040 [debug] [Thread-4 (]: Writing runtime SQL for node "seed.my_local_dbt_and_gcp_project.csv_data_users"
+[0m16:52:27.146249 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'acbaa658-fe83-40ca-b5ac-4f7f571faccc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b2c0290>]}
+[0m16:52:27.146601 [info ] [Thread-4 (]: 4 of 4 OK loaded seed file futurewaterlevel.csv_data_users ..................... [[32mCREATE 5[0m in 4.20s]
+[0m16:52:27.146932 [debug] [Thread-4 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:52:27.630456 [debug] [Thread-1 (]: On seed.my_local_dbt_and_gcp_project.csv_data_events: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "oscar_dunge_gcp", "target_name": "dev", "node_id": "seed.my_local_dbt_and_gcp_project.csv_data_events"} */
+
+    alter table `primeval-rune-447712-f5`.`futurewaterlevel`.`csv_data_events` set OPTIONS()
+  
+[0m16:52:27.800717 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=primeval-rune-447712-f5&j=bq:europe-west1:18fe0f43-ab21-4726-b7ff-714dc22f7629&page=queryresults
+[0m16:52:28.145374 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.my_local_dbt_and_gcp_project.csv_data_events"
+[0m16:52:28.149395 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'acbaa658-fe83-40ca-b5ac-4f7f571faccc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b100320>]}
+[0m16:52:28.150016 [info ] [Thread-1 (]: 1 of 4 OK loaded seed file futurewaterlevel.csv_data_events .................... [[32mCREATE 5[0m in 5.20s]
+[0m16:52:28.150588 [debug] [Thread-1 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:52:28.151867 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:52:28.153811 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:52:28.154107 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_events' was properly closed.
+[0m16:52:28.154348 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_kommundata_moh' was properly closed.
+[0m16:52:28.154553 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_raw_logs' was properly closed.
+[0m16:52:28.154760 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_users' was properly closed.
+[0m16:52:28.155017 [info ] [MainThread]: 
+[0m16:52:28.155264 [info ] [MainThread]: Finished running 4 seeds in 0 hours 0 minutes and 6.00 seconds (6.00s).
+[0m16:52:28.156262 [debug] [MainThread]: Command end result
+[0m16:52:28.174005 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/manifest.json
+[0m16:52:28.175157 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/semantic_manifest.json
+[0m16:52:28.179497 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/run_results.json
+[0m16:52:28.179742 [info ] [MainThread]: 
+[0m16:52:28.179982 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:52:28.180160 [info ] [MainThread]: 
+[0m16:52:28.180334 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m16:52:28.182635 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 6.9784164, "process_in_blocks": "0", "process_kernel_time": 0.300465, "process_mem_max_rss": "202670080", "process_out_blocks": "0", "process_user_time": 1.62426}
+[0m16:52:28.182903 [debug] [MainThread]: Command `dbt seed` succeeded at 16:52:28.182847 after 6.98 seconds
+[0m16:52:28.183125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b02d190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b105490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b107770>]}
+[0m16:52:28.183341 [debug] [MainThread]: Flushing usage events
+[0m16:52:28.643980 [debug] [MainThread]: An error was encountered while trying to flush usage events
