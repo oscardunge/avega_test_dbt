@@ -45,30 +45,32 @@ profile: 'oscar_dunge_gcp'
 
 config-version: 2
 
-#model-paths: ["models"]
+model-paths: ["models"]
 analysis-paths: ["analysis"]
 test-paths: ["tests"]
-seed-paths: ["csv_data"]  # Include the path where your CSVs are stored
+#seed-paths: ["csv_data"]  # Include the path where your CSVs are stored
 #data-paths: ["csv_data"]  # Include the path where your CSVs are stored
 macro-paths: ["macros"]
 
-#models:
-#  my_local_dbt_and_gcp_project:
-#    events:
-#      materialized: table
-#    raw_logs:
-#      materialized: table
-#    users:
-#      materialized: table
 
-seeds:
+models:
   my_local_dbt_and_gcp_project:
     events:
-      file: data/events.csv
-      header: true
+      materialized: table
     raw_logs:
-      file: data/raw_logs.csv
-      header: true
+      materialized: table
     users:
-      file: data/users.csv
-      header: true
+      materialized: table
+
+
+#seeds:
+#  my_local_dbt_and_gcp_project:
+#    events:
+#      file: data/events.csv
+#      header: true
+#    raw_logs:
+#      file: data/raw_logs.csv
+#      header: true
+#    users:
+#      file: data/users.csv
+#      header: true

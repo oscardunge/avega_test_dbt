@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: csv_data
+    schema: futurewaterlevel
+    tables:
+      - name: events
+      - name: raw_logs
+      - name: users
