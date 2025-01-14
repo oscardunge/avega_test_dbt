@@ -1,4 +1,6 @@
-event_id,event_type,event_details
-1,login,"User logged in"
-2,purchase,"User made a purchase"
-3,logout,"User logged out"
+id,event_name,event_date,value
+2001,page_view,2023-10-26,123
+2002,click,2023-10-26,456
+2003,purchase,2023-10-27,789
+2004,page_load,2023-10-27,101
+2005,form_submit,2023-10-28,222

@@ -1,11 +1,7 @@
-log_id,timestamp,user_id,event_type,event_details
-1,"2025-01-10 10:00:00",1,login,"User logged in"
-2,"2025-01-10 10:05:00",2,purchase,"User made a purchase"
-3,"2025-01-10 10:10:00",1,logout,"User logged out"
-4,"2025-01-10 10:15:00",3,login,"User logged in"
-5,"2025-01-10 10:20:00",2,purchase,"User made another purchase"
-6,"2025-01-10 10:00:00",1,login,"User logged in"
-7,"2025-01-10 10:05:00",2,purchase,"User made a purchase"
-8,"2025-01-10 10:10:00",1,logout,"User logged out"
-9,"2025-01-10 10:15:00",3,login,"User logged in"
-10,"2025-01-10 10:20:00",2,purchase,"User made another purchase"
+id,user_id,event_type,timestamp
+1001,1,login,2023-10-26 10:05:00
+1002,2,logout,2023-10-26 11:30:00
+1003,1,purchase,2023-10-26 12:15:00
+1004,3,login,2023-10-27 09:10:00
+1005,2,purchase,2023-10-27 14:30:00
+1006,4,login,2023-10-27 16:00:00

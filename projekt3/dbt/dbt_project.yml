@@ -48,29 +48,40 @@ config-version: 2
 model-paths: ["models"]
 analysis-paths: ["analysis"]
 test-paths: ["tests"]
-#seed-paths: ["csv_data"]  # Include the path where your CSVs are stored
-data-paths: ["csv_data"]  # Include the path where your CSVs are stored
+seed-paths: ["csv_data"]  # Include the path where your CSVs are stored
+#data-paths: ["csv_data"]  # Include the path where your CSVs are stored
 macro-paths: ["macros"]
 
 
-models:
-  my_local_dbt_and_gcp_project:
-    events:
-      materialized: table
-    raw_logs:
-      materialized: table
-    users:
-      materialized: table
-
+#models:
+#  my_local_dbt_and_gcp_project:
+#    events:
+#      materialized: table
+#    raw_logs:
+#      materialized: table
+#    users:
+#      materialized: table
+#
 
 #seeds:
 #  my_local_dbt_and_gcp_project:
 #    events:
-#      file: data/events.csv
+#      file: csv_data/csv_data_events.csv
 #      header: true
 #    raw_logs:
-#      file: data/raw_logs.csv
+#      file: csv_data/csv_data_raw_logs.csv
 #      header: true
 #    users:
-#      file: data/users.csv
+#      file: csv_data/csv_data_users.csv
 #      header: true
+
+seeds:
+  my_local_dbt_and_gcp_project:
+    +schema: futurewaterlevel # Ditt BigQuery dataset
+    +materialized: seed # Viktigt att ha med!
+    csv_data_users: # Matchar filnamnet (utan .csv)
+      +table_name: users # Tabellnamnet i BigQuery
+    csv_data_raw_logs:
+      +table_name: raw_logs
+    csv_data_events:
+      +table_name: events

@@ -4448,3 +4448,349 @@ Compilation Error
 [0m15:14:23.640465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bac1a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105519b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ab31ee0>]}
 [0m15:14:23.640616 [debug] [MainThread]: Flushing usage events
 [0m15:14:24.108399 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:15:27.331658 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c4b830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c6fc20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c900e0>]}
+
+
+============================== 16:15:27.334563 | 74631f54-ae04-4d96-b706-ea5fbc154c87 ==============================
+[0m16:15:27.334563 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:15:27.334865 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/oscar/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/oscar/git/avega_test_dbt/projekt3/dbt/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:15:27.978309 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m16:15:27.978568 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '74631f54-ae04-4d96-b706-ea5fbc154c87', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088ba9c0>]}
+[0m16:15:28.029842 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '74631f54-ae04-4d96-b706-ea5fbc154c87', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10480db20>]}
+[0m16:15:28.053230 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '74631f54-ae04-4d96-b706-ea5fbc154c87', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f72d6d0>]}
+[0m16:15:28.053533 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m16:15:28.127012 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:15:28.167970 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m16:15:28.168219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '74631f54-ae04-4d96-b706-ea5fbc154c87', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1292c9130>]}
+[0m16:15:28.585137 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- seeds.my_local_dbt_and_gcp_project.raw_logs
+- seeds.my_local_dbt_and_gcp_project.events
+- seeds.my_local_dbt_and_gcp_project.users
+[0m16:15:28.587357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '74631f54-ae04-4d96-b706-ea5fbc154c87', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x128ec15e0>]}
+[0m16:15:28.608941 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/manifest.json
+[0m16:15:28.610643 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/semantic_manifest.json
+[0m16:15:28.622040 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '74631f54-ae04-4d96-b706-ea5fbc154c87', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1293d5a30>]}
+[0m16:15:28.622308 [info ] [MainThread]: Found 3 seeds, 489 macros
+[0m16:15:28.622472 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '74631f54-ae04-4d96-b706-ea5fbc154c87', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12928ae40>]}
+[0m16:15:28.623223 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:15:28.623483 [debug] [MainThread]: Command end result
+[0m16:15:28.632320 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/manifest.json
+[0m16:15:28.632958 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/semantic_manifest.json
+[0m16:15:28.634799 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/run_results.json
+[0m16:15:28.636602 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.3572925, "process_in_blocks": "0", "process_kernel_time": 0.277522, "process_mem_max_rss": "195788800", "process_out_blocks": "0", "process_user_time": 1.418436}
+[0m16:15:28.636819 [debug] [MainThread]: Command `dbt run` succeeded at 16:15:28.636777 after 1.36 seconds
+[0m16:15:28.636993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12923ea80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c90380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c90410>]}
+[0m16:15:28.637148 [debug] [MainThread]: Flushing usage events
+[0m16:15:29.090730 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:15:47.053025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048ce2a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104914440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104914080>]}
+
+
+============================== 16:15:47.055648 | 34f92b5b-367d-4f17-97dc-807819bd9e8d ==============================
+[0m16:15:47.055648 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:15:47.055939 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/oscar/.dbt', 'log_path': '/Users/oscar/git/avega_test_dbt/projekt3/dbt/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m16:15:47.636434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '34f92b5b-367d-4f17-97dc-807819bd9e8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a66ac30>]}
+[0m16:15:47.659110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '34f92b5b-367d-4f17-97dc-807819bd9e8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103572660>]}
+[0m16:15:47.659372 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m16:15:47.732001 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:15:47.756187 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m16:15:47.756431 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '34f92b5b-367d-4f17-97dc-807819bd9e8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ab04110>]}
+[0m16:15:48.172094 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- seeds.my_local_dbt_and_gcp_project.users
+- seeds.my_local_dbt_and_gcp_project.raw_logs
+- seeds.my_local_dbt_and_gcp_project.events
+[0m16:15:48.174290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '34f92b5b-367d-4f17-97dc-807819bd9e8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10abdf380>]}
+[0m16:15:48.196258 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/manifest.json
+[0m16:15:48.198140 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/semantic_manifest.json
+[0m16:15:48.208029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '34f92b5b-367d-4f17-97dc-807819bd9e8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10abeb0b0>]}
+[0m16:15:48.208261 [info ] [MainThread]: Found 3 seeds, 489 macros
+[0m16:15:48.208423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '34f92b5b-367d-4f17-97dc-807819bd9e8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10abdfce0>]}
+[0m16:15:48.209171 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:15:48.209420 [debug] [MainThread]: Command end result
+[0m16:15:48.218819 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/manifest.json
+[0m16:15:48.219540 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/semantic_manifest.json
+[0m16:15:48.221041 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/run_results.json
+[0m16:15:48.222805 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.2188027, "process_in_blocks": "0", "process_kernel_time": 0.214776, "process_mem_max_rss": "196050944", "process_out_blocks": "0", "process_user_time": 1.399751}
+[0m16:15:48.223039 [debug] [MainThread]: Command `dbt run` succeeded at 16:15:48.222994 after 1.22 seconds
+[0m16:15:48.223226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104914380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104914320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a2f07a0>]}
+[0m16:15:48.223387 [debug] [MainThread]: Flushing usage events
+[0m16:15:48.619228 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:16:16.904374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106889cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068d4500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068d40b0>]}
+
+
+============================== 16:16:16.906592 | 2fe816cc-90d8-4de8-a720-621d8c000218 ==============================
+[0m16:16:16.906592 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:16:16.906907 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/oscar/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/oscar/git/avega_test_dbt/projekt3/dbt/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt seed', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:16:17.272945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2fe816cc-90d8-4de8-a720-621d8c000218', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c76d670>]}
+[0m16:16:17.297435 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2fe816cc-90d8-4de8-a720-621d8c000218', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c664ef0>]}
+[0m16:16:17.297807 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m16:16:17.364689 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:16:17.399497 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:16:17.399678 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:16:17.401980 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- seeds.my_local_dbt_and_gcp_project.raw_logs
+- seeds.my_local_dbt_and_gcp_project.events
+- seeds.my_local_dbt_and_gcp_project.users
+[0m16:16:17.409086 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2fe816cc-90d8-4de8-a720-621d8c000218', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c85d880>]}
+[0m16:16:17.432270 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/manifest.json
+[0m16:16:17.433693 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/semantic_manifest.json
+[0m16:16:17.440468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2fe816cc-90d8-4de8-a720-621d8c000218', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cb65790>]}
+[0m16:16:17.440687 [info ] [MainThread]: Found 3 seeds, 489 macros
+[0m16:16:17.440858 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2fe816cc-90d8-4de8-a720-621d8c000218', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c9b1550>]}
+[0m16:16:17.441684 [info ] [MainThread]: 
+[0m16:16:17.441863 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:16:17.442002 [info ] [MainThread]: 
+[0m16:16:17.442235 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:16:17.443874 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_primeval-rune-447712-f5'
+[0m16:16:17.444080 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:16:17.870360 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_primeval-rune-447712-f5, now list_primeval-rune-447712-f5_futurewaterlevel)
+[0m16:16:17.871361 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:16:18.153353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2fe816cc-90d8-4de8-a720-621d8c000218', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c832510>]}
+[0m16:16:18.154354 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:16:18.158364 [debug] [Thread-1 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:16:18.158973 [debug] [Thread-2 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:16:18.159432 [debug] [Thread-3 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:16:18.160036 [info ] [Thread-1 (]: 1 of 3 START seed file futurewaterlevel.csv_data_events ........................ [RUN]
+[0m16:16:18.160645 [info ] [Thread-2 (]: 2 of 3 START seed file futurewaterlevel.csv_data_raw_logs ...................... [RUN]
+[0m16:16:18.161169 [info ] [Thread-3 (]: 3 of 3 START seed file futurewaterlevel.csv_data_users ......................... [RUN]
+[0m16:16:18.161708 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_primeval-rune-447712-f5_futurewaterlevel, now seed.my_local_dbt_and_gcp_project.csv_data_events)
+[0m16:16:18.162247 [debug] [Thread-2 (]: Acquiring new bigquery connection 'seed.my_local_dbt_and_gcp_project.csv_data_raw_logs'
+[0m16:16:18.162733 [debug] [Thread-3 (]: Acquiring new bigquery connection 'seed.my_local_dbt_and_gcp_project.csv_data_users'
+[0m16:16:18.163093 [debug] [Thread-1 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:16:18.163392 [debug] [Thread-2 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:16:18.163673 [debug] [Thread-3 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:16:18.163990 [debug] [Thread-1 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:16:18.164301 [debug] [Thread-2 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:16:18.164586 [debug] [Thread-3 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:16:18.231392 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:16:18.232146 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:16:18.232508 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m16:16:21.268107 [debug] [Thread-2 (]: On seed.my_local_dbt_and_gcp_project.csv_data_raw_logs: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "oscar_dunge_gcp", "target_name": "dev", "node_id": "seed.my_local_dbt_and_gcp_project.csv_data_raw_logs"} */
+
+    alter table `primeval-rune-447712-f5`.`futurewaterlevel`.`csv_data_raw_logs` set OPTIONS()
+  
+[0m16:16:21.371308 [debug] [Thread-3 (]: On seed.my_local_dbt_and_gcp_project.csv_data_users: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "oscar_dunge_gcp", "target_name": "dev", "node_id": "seed.my_local_dbt_and_gcp_project.csv_data_users"} */
+
+    alter table `primeval-rune-447712-f5`.`futurewaterlevel`.`csv_data_users` set OPTIONS()
+  
+[0m16:16:21.655810 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=primeval-rune-447712-f5&j=bq:europe-west1:4be79126-87e1-4962-ab94-4237fd73340a&page=queryresults
+[0m16:16:21.887886 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=primeval-rune-447712-f5&j=bq:europe-west1:0bc3588c-fdfb-43e3-b687-3deafcb38fa5&page=queryresults
+[0m16:16:21.920836 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.my_local_dbt_and_gcp_project.csv_data_raw_logs"
+[0m16:16:21.941620 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2fe816cc-90d8-4de8-a720-621d8c000218', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b30da0>]}
+[0m16:16:21.942101 [info ] [Thread-2 (]: 2 of 3 OK loaded seed file futurewaterlevel.csv_data_raw_logs .................. [[32mINSERT 6[0m in 3.78s]
+[0m16:16:21.942559 [debug] [Thread-2 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:16:21.964441 [debug] [Thread-1 (]: On seed.my_local_dbt_and_gcp_project.csv_data_events: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "oscar_dunge_gcp", "target_name": "dev", "node_id": "seed.my_local_dbt_and_gcp_project.csv_data_events"} */
+
+    alter table `primeval-rune-447712-f5`.`futurewaterlevel`.`csv_data_events` set OPTIONS()
+  
+[0m16:16:22.143168 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.my_local_dbt_and_gcp_project.csv_data_users"
+[0m16:16:22.148793 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2fe816cc-90d8-4de8-a720-621d8c000218', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cfa6ea0>]}
+[0m16:16:22.149413 [info ] [Thread-3 (]: 3 of 3 OK loaded seed file futurewaterlevel.csv_data_users ..................... [[32mINSERT 5[0m in 3.99s]
+[0m16:16:22.149998 [debug] [Thread-3 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:16:22.217631 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=primeval-rune-447712-f5&j=bq:europe-west1:05e73544-7b02-4b21-a2c2-7a4b14cc2412&page=queryresults
+[0m16:16:22.477000 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.my_local_dbt_and_gcp_project.csv_data_events"
+[0m16:16:22.482892 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2fe816cc-90d8-4de8-a720-621d8c000218', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cf10230>]}
+[0m16:16:22.483669 [info ] [Thread-1 (]: 1 of 3 OK loaded seed file futurewaterlevel.csv_data_events .................... [[32mINSERT 5[0m in 4.32s]
+[0m16:16:22.484315 [debug] [Thread-1 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:16:22.485921 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:16:22.488341 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:16:22.488727 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_events' was properly closed.
+[0m16:16:22.489037 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_raw_logs' was properly closed.
+[0m16:16:22.489321 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_users' was properly closed.
+[0m16:16:22.489758 [info ] [MainThread]: 
+[0m16:16:22.490265 [info ] [MainThread]: Finished running 3 seeds in 0 hours 0 minutes and 5.05 seconds (5.05s).
+[0m16:16:22.491264 [debug] [MainThread]: Command end result
+[0m16:16:22.511617 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/manifest.json
+[0m16:16:22.512959 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/semantic_manifest.json
+[0m16:16:22.516963 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/run_results.json
+[0m16:16:22.517216 [info ] [MainThread]: 
+[0m16:16:22.517485 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:16:22.517673 [info ] [MainThread]: 
+[0m16:16:22.517876 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m16:16:22.519476 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 5.6613073, "process_in_blocks": "0", "process_kernel_time": 0.228518, "process_mem_max_rss": "201080832", "process_out_blocks": "0", "process_user_time": 1.42949}
+[0m16:16:22.519801 [debug] [MainThread]: Command `dbt seed` succeeded at 16:16:22.519738 after 5.66 seconds
+[0m16:16:22.520053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068622a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c833770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cbf2b10>]}
+[0m16:16:22.520272 [debug] [MainThread]: Flushing usage events
+[0m16:16:22.927348 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:20:07.177610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065891f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106589340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065b3f20>]}
+
+
+============================== 16:20:07.180681 | 2a6fba1b-b51c-42be-95d5-e5085d32fee6 ==============================
+[0m16:20:07.180681 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:20:07.180987 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/oscar/git/avega_test_dbt/projekt3/dbt/logs', 'version_check': 'True', 'profiles_dir': '/Users/oscar/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt seed --full-refresh', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:20:07.814790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2a6fba1b-b51c-42be-95d5-e5085d32fee6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104835d60>]}
+[0m16:20:07.837962 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2a6fba1b-b51c-42be-95d5-e5085d32fee6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10befa1e0>]}
+[0m16:20:07.838233 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m16:20:07.911189 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:20:07.935766 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m16:20:07.936007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '2a6fba1b-b51c-42be-95d5-e5085d32fee6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f73aa0>]}
+[0m16:20:08.282241 [error] [MainThread]: Encountered an error:
+Parsing Error
+  at path []: A seed must have a materialized value of 'seed'
+[0m16:20:08.285177 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 1.1595086, "process_in_blocks": "0", "process_kernel_time": 0.262807, "process_mem_max_rss": "192020480", "process_out_blocks": "0", "process_user_time": 1.282307}
+[0m16:20:08.285401 [debug] [MainThread]: Command `dbt seed` failed at 16:20:08.285356 after 1.16 seconds
+[0m16:20:08.285580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1063457f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bff4080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b091e80>]}
+[0m16:20:08.285734 [debug] [MainThread]: Flushing usage events
+[0m16:20:08.689844 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:20:42.725811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066a0b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108607ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d78620>]}
+
+
+============================== 16:20:42.728441 | 2e855cd2-c47f-4c44-9e6c-08d5c8e113cd ==============================
+[0m16:20:42.728441 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:20:42.728727 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/oscar/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/oscar/git/avega_test_dbt/projekt3/dbt/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt seed --full-refresh', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:20:43.323071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2e855cd2-c47f-4c44-9e6c-08d5c8e113cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b21d30>]}
+[0m16:20:43.345882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2e855cd2-c47f-4c44-9e6c-08d5c8e113cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e650170>]}
+[0m16:20:43.346147 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m16:20:43.419345 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:20:43.444199 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m16:20:43.444452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '2e855cd2-c47f-4c44-9e6c-08d5c8e113cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cccac30>]}
+[0m16:20:43.784459 [error] [MainThread]: Encountered an error:
+Parsing Error
+  at path []: A seed must have a materialized value of 'seed'
+[0m16:20:43.787369 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 1.1098311, "process_in_blocks": "0", "process_kernel_time": 0.238397, "process_mem_max_rss": "191676416", "process_out_blocks": "0", "process_user_time": 1.281229}
+[0m16:20:43.787574 [debug] [MainThread]: Command `dbt seed` failed at 16:20:43.787530 after 1.11 seconds
+[0m16:20:43.787744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066a0b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a77aa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1086ce180>]}
+[0m16:20:43.787897 [debug] [MainThread]: Flushing usage events
+[0m16:20:44.195883 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:21:09.064052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1093449e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10936fbc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10936ffe0>]}
+
+
+============================== 16:21:09.066301 | 6c9d3473-9319-4bc2-8fbc-8cc7289eb1a2 ==============================
+[0m16:21:09.066301 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:21:09.066581 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/oscar/git/avega_test_dbt/projekt3/dbt/logs', 'debug': 'False', 'profiles_dir': '/Users/oscar/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt seed --full-refresh', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:21:09.469853 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path []: Additional properties are not allowed ('seed' was unexpected)
+
+Error encountered in /Users/oscar/git/avega_test_dbt/projekt3/dbt/dbt_project.yml
+[0m16:21:09.471739 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 0.45565116, "process_in_blocks": "0", "process_kernel_time": 0.143247, "process_mem_max_rss": "184598528", "process_out_blocks": "0", "process_user_time": 0.828017}
+[0m16:21:09.471981 [debug] [MainThread]: Command `dbt seed` failed at 16:21:09.471934 after 0.46 seconds
+[0m16:21:09.472166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fc5bf80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1086640e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109347290>]}
+[0m16:21:09.472343 [debug] [MainThread]: Flushing usage events
+[0m16:21:09.866897 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:21:35.416797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104be8830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e64650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e64200>]}
+
+
+============================== 16:21:35.419060 | db1fb910-bdc4-4eb9-a098-68e31295bb39 ==============================
+[0m16:21:35.419060 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:21:35.419369 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/oscar/.dbt', 'log_path': '/Users/oscar/git/avega_test_dbt/projekt3/dbt/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt seed', 'send_anonymous_usage_stats': 'True'}
+[0m16:21:35.818295 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'db1fb910-bdc4-4eb9-a098-68e31295bb39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ef644a0>]}
+[0m16:21:35.841079 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'db1fb910-bdc4-4eb9-a098-68e31295bb39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104abffb0>]}
+[0m16:21:35.841373 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m16:21:35.913877 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:21:35.938160 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m16:21:35.938412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'db1fb910-bdc4-4eb9-a098-68e31295bb39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e186b0>]}
+[0m16:21:36.281453 [error] [MainThread]: Encountered an error:
+Parsing Error
+  at path []: A seed must have a materialized value of 'seed'
+[0m16:21:36.283984 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 0.9144236, "process_in_blocks": "0", "process_kernel_time": 0.198586, "process_mem_max_rss": "191102976", "process_out_blocks": "0", "process_user_time": 1.269597}
+[0m16:21:36.284185 [debug] [MainThread]: Command `dbt seed` failed at 16:21:36.284143 after 0.91 seconds
+[0m16:21:36.284360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064b81a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fcd7800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fb68140>]}
+[0m16:21:36.284511 [debug] [MainThread]: Flushing usage events
+[0m16:21:36.683075 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:26:21.310975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1022fa8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103cbb500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045a3d70>]}
+
+
+============================== 16:26:21.313921 | 1412c565-7257-4a4f-96cf-d71f08d74840 ==============================
+[0m16:26:21.313921 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:26:21.314213 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/oscar/git/avega_test_dbt/projekt3/dbt/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/oscar/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt seed --full-refresh', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:26:21.937661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1412c565-7257-4a4f-96cf-d71f08d74840', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045c82c0>]}
+[0m16:26:21.960587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1412c565-7257-4a4f-96cf-d71f08d74840', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d0b380>]}
+[0m16:26:21.960848 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m16:26:22.034628 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:26:22.059237 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m16:26:22.059486 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1412c565-7257-4a4f-96cf-d71f08d74840', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a4c6c30>]}
+[0m16:26:22.481095 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1412c565-7257-4a4f-96cf-d71f08d74840', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a8759a0>]}
+[0m16:26:22.501043 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/manifest.json
+[0m16:26:22.502613 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/semantic_manifest.json
+[0m16:26:22.513211 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1412c565-7257-4a4f-96cf-d71f08d74840', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a8a17c0>]}
+[0m16:26:22.513423 [info ] [MainThread]: Found 3 seeds, 489 macros
+[0m16:26:22.513581 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1412c565-7257-4a4f-96cf-d71f08d74840', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6e0d70>]}
+[0m16:26:22.514321 [info ] [MainThread]: 
+[0m16:26:22.514483 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:26:22.514605 [info ] [MainThread]: 
+[0m16:26:22.514801 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:26:22.516421 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_primeval-rune-447712-f5'
+[0m16:26:22.516594 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:26:22.842677 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_primeval-rune-447712-f5, now create_primeval-rune-447712-f5_futurewaterlevel_futurewaterlevel)
+[0m16:26:22.845022 [debug] [ThreadPool]: Creating schema "database: "primeval-rune-447712-f5"
+schema: "futurewaterlevel_futurewaterlevel"
+"
+[0m16:26:22.860434 [debug] [ThreadPool]: On create_primeval-rune-447712-f5_futurewaterlevel_futurewaterlevel: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "oscar_dunge_gcp", "target_name": "dev", "connection_name": "create_primeval-rune-447712-f5_futurewaterlevel_futurewaterlevel"} */
+create schema if not exists `primeval-rune-447712-f5`.`futurewaterlevel_futurewaterlevel`
+  
+[0m16:26:22.860976 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:26:23.425457 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=primeval-rune-447712-f5&j=bq:europe-west1:749579b7-089e-44f0-a64f-b4d79e929916&page=queryresults
+[0m16:26:25.215227 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_primeval-rune-447712-f5_futurewaterlevel_futurewaterlevel, now list_primeval-rune-447712-f5_futurewaterlevel_futurewaterlevel)
+[0m16:26:25.215479 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:26:25.498313 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1412c565-7257-4a4f-96cf-d71f08d74840', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1028b6de0>]}
+[0m16:26:25.499402 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:26:25.504204 [debug] [Thread-1 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:26:25.504872 [debug] [Thread-2 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:26:25.505410 [debug] [Thread-3 (]: Began running node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:26:25.506128 [info ] [Thread-1 (]: 1 of 3 START seed file futurewaterlevel_futurewaterlevel.csv_data_events ....... [RUN]
+[0m16:26:25.506778 [info ] [Thread-2 (]: 2 of 3 START seed file futurewaterlevel_futurewaterlevel.csv_data_raw_logs ..... [RUN]
+[0m16:26:25.507380 [info ] [Thread-3 (]: 3 of 3 START seed file futurewaterlevel_futurewaterlevel.csv_data_users ........ [RUN]
+[0m16:26:25.507940 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_primeval-rune-447712-f5_futurewaterlevel_futurewaterlevel, now seed.my_local_dbt_and_gcp_project.csv_data_events)
+[0m16:26:25.508506 [debug] [Thread-2 (]: Acquiring new bigquery connection 'seed.my_local_dbt_and_gcp_project.csv_data_raw_logs'
+[0m16:26:25.508999 [debug] [Thread-3 (]: Acquiring new bigquery connection 'seed.my_local_dbt_and_gcp_project.csv_data_users'
+[0m16:26:25.509417 [debug] [Thread-1 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:26:25.510115 [debug] [Thread-2 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:26:25.510549 [debug] [Thread-3 (]: Began compiling node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:26:25.510978 [debug] [Thread-1 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:26:25.511386 [debug] [Thread-2 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:26:25.511762 [debug] [Thread-3 (]: Began executing node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:26:25.543868 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:26:25.545315 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m16:26:25.586308 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:26:29.323670 [debug] [Thread-3 (]: On seed.my_local_dbt_and_gcp_project.csv_data_users: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "oscar_dunge_gcp", "target_name": "dev", "node_id": "seed.my_local_dbt_and_gcp_project.csv_data_users"} */
+
+    alter table `primeval-rune-447712-f5`.`futurewaterlevel_futurewaterlevel`.`csv_data_users` set OPTIONS()
+  
+[0m16:26:29.537092 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=primeval-rune-447712-f5&j=bq:europe-west1:d407c437-ed74-43be-b9b5-84f8c4823fd0&page=queryresults
+[0m16:26:29.874452 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.my_local_dbt_and_gcp_project.csv_data_users"
+[0m16:26:29.892665 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1412c565-7257-4a4f-96cf-d71f08d74840', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102824c80>]}
+[0m16:26:29.893071 [info ] [Thread-3 (]: 3 of 3 OK loaded seed file futurewaterlevel_futurewaterlevel.csv_data_users .... [[32mCREATE 5[0m in 4.38s]
+[0m16:26:29.893478 [debug] [Thread-3 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_users
+[0m16:26:30.611424 [debug] [Thread-1 (]: On seed.my_local_dbt_and_gcp_project.csv_data_events: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "oscar_dunge_gcp", "target_name": "dev", "node_id": "seed.my_local_dbt_and_gcp_project.csv_data_events"} */
+
+    alter table `primeval-rune-447712-f5`.`futurewaterlevel_futurewaterlevel`.`csv_data_events` set OPTIONS()
+  
+[0m16:26:30.667240 [debug] [Thread-2 (]: On seed.my_local_dbt_and_gcp_project.csv_data_raw_logs: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "oscar_dunge_gcp", "target_name": "dev", "node_id": "seed.my_local_dbt_and_gcp_project.csv_data_raw_logs"} */
+
+    alter table `primeval-rune-447712-f5`.`futurewaterlevel_futurewaterlevel`.`csv_data_raw_logs` set OPTIONS()
+  
+[0m16:26:30.905773 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=primeval-rune-447712-f5&j=bq:europe-west1:f6ebe8a5-e2c5-49e5-b768-7a505b24b8cc&page=queryresults
+[0m16:26:30.969258 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=primeval-rune-447712-f5&j=bq:europe-west1:de52d2ea-bddb-46c7-826f-0b8189c99236&page=queryresults
+[0m16:26:31.149736 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.my_local_dbt_and_gcp_project.csv_data_raw_logs"
+[0m16:26:31.156616 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1412c565-7257-4a4f-96cf-d71f08d74840', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa44800>]}
+[0m16:26:31.157554 [info ] [Thread-2 (]: 2 of 3 OK loaded seed file futurewaterlevel_futurewaterlevel.csv_data_raw_logs . [[32mCREATE 6[0m in 5.65s]
+[0m16:26:31.158372 [debug] [Thread-2 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_raw_logs
+[0m16:26:31.313870 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.my_local_dbt_and_gcp_project.csv_data_events"
+[0m16:26:31.318437 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1412c565-7257-4a4f-96cf-d71f08d74840', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa46360>]}
+[0m16:26:31.319051 [info ] [Thread-1 (]: 1 of 3 OK loaded seed file futurewaterlevel_futurewaterlevel.csv_data_events ... [[32mCREATE 5[0m in 5.81s]
+[0m16:26:31.319627 [debug] [Thread-1 (]: Finished running node seed.my_local_dbt_and_gcp_project.csv_data_events
+[0m16:26:31.320935 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:26:31.322854 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:26:31.323141 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_events' was properly closed.
+[0m16:26:31.323383 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_raw_logs' was properly closed.
+[0m16:26:31.323613 [debug] [MainThread]: Connection 'seed.my_local_dbt_and_gcp_project.csv_data_users' was properly closed.
+[0m16:26:31.323902 [info ] [MainThread]: 
+[0m16:26:31.324183 [info ] [MainThread]: Finished running 3 seeds in 0 hours 0 minutes and 8.81 seconds (8.81s).
+[0m16:26:31.325052 [debug] [MainThread]: Command end result
+[0m16:26:31.343003 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/manifest.json
+[0m16:26:31.344122 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/semantic_manifest.json
+[0m16:26:31.348418 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/oscar/git/avega_test_dbt/projekt3/dbt/target/run_results.json
+[0m16:26:31.348637 [info ] [MainThread]: 
+[0m16:26:31.348866 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:26:31.349035 [info ] [MainThread]: 
+[0m16:26:31.349210 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m16:26:31.351421 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 10.090928, "process_in_blocks": "0", "process_kernel_time": 0.311084, "process_mem_max_rss": "202571776", "process_out_blocks": "0", "process_user_time": 1.91478}
+[0m16:26:31.351729 [debug] [MainThread]: Command `dbt seed` succeeded at 16:26:31.351668 after 10.09 seconds
+[0m16:26:31.351965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a76bb30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045c8200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a826240>]}
+[0m16:26:31.352187 [debug] [MainThread]: Flushing usage events
+[0m16:26:31.824254 [debug] [MainThread]: An error was encountered while trying to flush usage events
