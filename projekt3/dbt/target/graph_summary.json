@@ -1,0 +1,1 @@
+{"_invocation_id": "6bb9f087-2381-4596-a4f7-fc47a42fa1d4", "linked": {"0": {"name": "seed.my_local_dbt_and_gcp_project.users", "type": "seed"}, "1": {"name": "seed.my_local_dbt_and_gcp_project.raw_logs", "type": "seed"}, "2": {"name": "seed.my_local_dbt_and_gcp_project.events", "type": "seed"}}}

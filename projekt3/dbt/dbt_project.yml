@@ -1,0 +1,74 @@
+#name: 'my_local_dbt_and_gcp_project'
+#version: '1.0'
+#profile: 'oscar_dunge_gcp'
+#
+#target-path: "target"
+#clean-targets: ["target"]
+#
+#model-paths: ["models"]
+#
+#
+## dbt_project.yml
+#
+##name: my_dbt_project
+##version: '1.0'
+#config-version: 2
+#
+
+
+# Models configuration
+#models:
+#  ingesteddata:
+#    usereventlog:
+#      +materialized: "table"
+
+
+#
+#name: 'my_local_dbt_and_gcp_project'
+#version: '1.0.0'
+#
+#profile: 'oscar_dunge_gcp'
+#config-version: 2
+#
+## Specify the schema where dbt will write tables and views
+#models:
+#    +schema: futurewaterlevel
+#    +location: europe-west1  # Matches the dataset location
+#
+
+
+
+name: 'my_local_dbt_and_gcp_project'  # This is the project name
+version: '1.0'
+
+profile: 'oscar_dunge_gcp'
+
+config-version: 2
+
+#model-paths: ["models"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+seed-paths: ["csv_data"]  # Include the path where your CSVs are stored
+#data-paths: ["csv_data"]  # Include the path where your CSVs are stored
+macro-paths: ["macros"]
+
+#models:
+#  my_local_dbt_and_gcp_project:
+#    events:
+#      materialized: table
+#    raw_logs:
+#      materialized: table
+#    users:
+#      materialized: table
+
+seeds:
+  my_local_dbt_and_gcp_project:
+    events:
+      file: data/events.csv
+      header: true
+    raw_logs:
+      file: data/raw_logs.csv
+      header: true
+    users:
+      file: data/users.csv
+      header: true

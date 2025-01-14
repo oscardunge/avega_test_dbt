@@ -1,0 +1,11 @@
+log_id,timestamp,user_id,event_type,event_details
+1,"2025-01-10 10:00:00",1,login,"User logged in"
+2,"2025-01-10 10:05:00",2,purchase,"User made a purchase"
+3,"2025-01-10 10:10:00",1,logout,"User logged out"
+4,"2025-01-10 10:15:00",3,login,"User logged in"
+5,"2025-01-10 10:20:00",2,purchase,"User made another purchase"
+6,"2025-01-10 10:00:00",1,login,"User logged in"
+7,"2025-01-10 10:05:00",2,purchase,"User made a purchase"
+8,"2025-01-10 10:10:00",1,logout,"User logged out"
+9,"2025-01-10 10:15:00",3,login,"User logged in"
+10,"2025-01-10 10:20:00",2,purchase,"User made another purchase"

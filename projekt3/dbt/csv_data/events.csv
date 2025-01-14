@@ -1,0 +1,4 @@
+event_id,event_type,event_details
+1,login,"User logged in"
+2,purchase,"User made a purchase"
+3,logout,"User logged out"
