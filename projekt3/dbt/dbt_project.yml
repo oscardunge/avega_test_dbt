@@ -49,7 +49,7 @@ model-paths: ["models"]
 analysis-paths: ["analysis"]
 test-paths: ["tests"]
 #seed-paths: ["csv_data"]  # Include the path where your CSVs are stored
-#data-paths: ["csv_data"]  # Include the path where your CSVs are stored
+data-paths: ["csv_data"]  # Include the path where your CSVs are stored
 macro-paths: ["macros"]
 
 
