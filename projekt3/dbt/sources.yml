@@ -1,0 +1,8 @@
+version: 2  # Ensure version is a number, not a string
+
+sources:  # Indent this line
+  main:  # Indent this line
+    database: primeval-rune-447712-f5  # Your GCP project ID
+    schema: futurewaterlevel
+    tables:  # Indent this line
+      - name: csv_data_events   # Indent this line

@@ -1,0 +1,38 @@
+# schemas.yml
+project_id: primeval-rune-447712-f5 
+dataset: futurewaterlevel
+project_root: /Users/oscar/git/avega_test_dbt/projekt3/  # Add this line
+credentials_path: iam/primeval-rune-447712-f5-5cf4265fd421.json
+schemas:
+  csv_data_events:
+    - name: id
+      type: INTEGER
+    - name: event_name
+      type: STRING
+    - name: event_date
+      type: DATE
+    - name: value
+      type: INTEGER
+  csv_data_raw_logs:
+    - name: id
+      type: INTEGER
+    - name: user_id
+      type: INTEGER
+    - name: event_type
+      type: STRING
+    - name: timestamp
+      type: DATETIME
+  csv_data_users:
+    - name: id
+      type: INTEGER
+    - name: username
+      type: STRING
+    - name: email
+      type: STRING
+    - name: created_at
+      type: DATETIME
+  csv_data_kommundata_moh:
+    - name: kommun
+      type: STRING
+    - name: moh
+      type: INTEGER
