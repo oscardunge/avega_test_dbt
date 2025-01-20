@@ -1,9 +1,7 @@
-
-
-
 name: my_local_dbt_and_gcp_project  # Replace with your project's name (e.g., my_data_pipeline)
 version: "1.0.0" # or "0.1.0" or any other version
 config-version: 2
+
 
 profile: 'oscar_dunge_gcp' # The profile name for your BigQuery connection
 
@@ -18,15 +16,21 @@ clean-targets:      # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
-models:
-  my_local_dbt_and_gcp_project: # This should match the name of your project
-    +materialized: incremental # Default materialization for models in this project
-    events: # Specific configuration for the events model
-      unique_key: id # The unique key for the events table
 
-sources:
-  main:
-    database: 'primeval-rune-447712-f5'  # Your GCP project ID
-    schema: 'futurewaterlevel'      # Your BigQuery dataset ID
-    tables:
-      - name: events # The final, renamed table
+
+models:
+  my_local_dbt_and_gcp_project:
+    events:
+      +materialized: table  # Change to 'table' to avoid automatic incremental behavior
+
+# sources:
+#   main:
+#     database: 'primeval-rune-447712-f5'  # Your GCP project ID
+#     schema: 'futurewaterlevel'      # Your BigQuery dataset ID
+#     tables:
+#       - name: events # The final, renamed table
+
+
+
+
+

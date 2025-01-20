@@ -17,16 +17,25 @@
 
 
 
-  MERGE INTO `primeval-rune-447712-f5`.`futurewaterlevel`.`events` AS target
-  USING None AS source
-  ON target.id = source.id  -- Make absolutely sure this is correct
-  WHEN MATCHED THEN UPDATE SET
-      -- List all columns to update explicitly
-      target.event_name = source.event_name,
-      target.event_date = source.event_date,
-      target.value = source.value
-  WHEN NOT MATCHED THEN INSERT (id, event_name, event_date, value) -- List all columns to insert
-  VALUES (source.id, source.event_name, source.event_date, source.value);
+  -- dbt will automatically generate the MERGE logic here
+  SELECT *
+  FROM (
+    SELECT
+      id,
+      event_name,
+      event_date,
+      value
+    FROM (
+      SELECT
+        id,
+        event_name,
+        event_date,
+        value,
+        ROW_NUMBER() OVER (PARTITION BY id ORDER BY event_date DESC) AS row_num
+      FROM `primeval-rune-447712-f5.futurewaterlevel.staging_csv_data_events_20250120`
+    ) AS subquery
+    WHERE row_num = 1
+  ) AS target
 
         ) as DBT_INTERNAL_SOURCE
         on (

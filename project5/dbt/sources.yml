@@ -7,3 +7,6 @@ sources:  # Indent this line
     tables:
       - name: events # The final, renamed table
       - name: staging_csv_data_events_{{ run_started_at.strftime("%Y%m%d") }} # Dynamic staging table
+
+
+

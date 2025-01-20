@@ -1,7 +1,8 @@
 venv/
+venv2/
 .DS_store
 iam/
 logs/
 dbt_packages/
 projekt4/
-target/
+dbt/target

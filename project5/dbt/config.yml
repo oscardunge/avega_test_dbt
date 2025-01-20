@@ -1,7 +1,7 @@
 # schemas.yml
 project_id: primeval-rune-447712-f5 
 dataset: futurewaterlevel
-project_root: /Users/oscar/git/avega_test_dbt/projekt3/  # Add this line
+project_root: /Users/oscar/git/avega_test_dbt/project5/  # Add this line
 credentials_path: iam/primeval-rune-447712-f5-5cf4265fd421.json
 yml_table_definitions:
   csv_data_events:
